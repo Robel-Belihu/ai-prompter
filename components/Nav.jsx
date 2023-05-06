@@ -79,12 +79,28 @@ const Nav = () => {
                 >
                   My Profile
                 </Link>
+                <Link
+                  href="/profile"
+                  className="dropdown_link"
+                  onClick={() => setToggleDropdown(false)}
+                >
+                  Create Prompt
+                </Link>
+                <button
+                  className="mt-5 w-full purple_btn"
+                  type="button"
+                  onClick={() => {
+                    setToggleDropdown(false);
+                    signOut();
+                  }}
+                >
+                  Sign Out
+                </button>
               </div>
             )}
           </div>
         ) : (
           <>
-            {" "}
             {providers &&
               Object.values(providers).map((provider) => (
                 <button
