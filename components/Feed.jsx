@@ -1,5 +1,3 @@
-s;
-
 const Feed = () => {
   return <div>Feed</div>;
 };

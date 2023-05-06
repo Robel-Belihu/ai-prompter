@@ -1,3 +1,5 @@
+import Feed from "@components/Feed";
+
 const Home = () => {
   return (
     <section className="w-full flex-center flex-col">
@@ -9,6 +11,7 @@ const Home = () => {
         ai-prompter let's you find and share new and creative prompts and it's
         an open-source
       </p>
+      <Feed />
     </section>
   );
 };
